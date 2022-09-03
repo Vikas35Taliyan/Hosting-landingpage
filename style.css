@@ -10,8 +10,9 @@ body {
   background-color: #fdfeff;
   font-family: "Open Sans", sans-serif;
 }
+
 /* logo */
-.main-logo > img {
+.main-logo>img {
   position: relative;
   width: 6rem;
   top: 2.5rem;
@@ -56,12 +57,13 @@ body {
   /* margin-bottom: 5rem; */
 }
 
-.sm-container-item > h1 {
+.sm-container-item>h1 {
   font-size: 2.5rem;
   color: #2c2c2c;
   margin-bottom: 0.5em;
 }
-.sm-container-item > p {
+
+.sm-container-item>p {
   font-weight: 500;
   color: #878787;
   /* line-height: 50px; */
@@ -80,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-.sm-container-img > img {
+.sm-container-img>img {
   height: 23rem;
 }
 
@@ -92,16 +94,17 @@ body {
   padding: 5em;
 }
 
-.sm-container-img01 > img {
+.sm-container-img01>img {
   height: 23rem;
 }
 
-.sm-container-item01 > h1 {
+.sm-container-item01>h1 {
   font-size: 2.5rem;
   color: #2c2c2c;
   margin-bottom: 0.6em;
 }
-.sm-container-item01 > p {
+
+.sm-container-item01>p {
   font-weight: 500;
   color: #878787;
   font-size: 14px;
@@ -128,15 +131,18 @@ body {
   grid-column-gap: 8em;
   padding: 5em;
 }
+
 .sm-container-item02 {
   margin-top: 6rem;
 }
-.sm-container-item02 > h1 {
+
+.sm-container-item02>h1 {
   font-size: 2.5rem;
   color: #2c2c2c;
   margin-bottom: 0.5em;
 }
-.sm-container-item02 > p {
+
+.sm-container-item02>p {
   font-weight: 500;
   color: #878787;
   font-size: 14px;
@@ -155,7 +161,7 @@ body {
   cursor: pointer;
 }
 
-.sm-container02-img > img {
+.sm-container02-img>img {
   height: 23rem;
 }
 
@@ -167,7 +173,7 @@ body {
   padding: 5em;
 }
 
-.sm-heading > h1 {
+.sm-heading>h1 {
   font-size: 2.7rem;
   color: #2c2c2c;
   margin-bottom: 0.5em;
@@ -179,6 +185,7 @@ body {
   font-size: 1em;
   margin-top: 1rem;
 }
+
 /* cards */
 .cards {
   display: grid;
@@ -192,17 +199,20 @@ body {
   margin-left: 1em;
   width: 40px;
 }
-.card-heading > h4 {
+
+.card-heading>h4 {
   font-size: 1.8rem;
   color: #14263f;
   text-transform: capitalize;
 }
-.card-paragraph > p {
+
+.card-paragraph>p {
   font-weight: 500;
   font-size: 14px;
   color: #878787;
   margin-top: 13px;
 }
+
 /* pricing */
 
 .pricing-section {
@@ -307,6 +317,7 @@ body {
   border: 1px solid #3faaf4;
   font-weight: 700;
 }
+
 /* customer cards */
 
 .testimonials {
@@ -371,6 +382,7 @@ body {
   font-weight: normal;
   font-size: 12px;
 }
+
 /* register */
 .register-section {
   background: url("../assets/footer-bg.svg");
@@ -410,6 +422,7 @@ body {
   border: 1px solid #ffffff;
   margin-right: 100px;
 }
+
 /* footer */
 
 footer {
@@ -481,4 +494,108 @@ footer {
   height: 34px;
   width: 34px;
   border-radius: 17px;
+}
+
+@media only screen and (max-width: 740px) {
+  .nav-item {
+    display: none;
+  }
+
+  .sm-container {
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    padding: 2rem;
+  }
+
+  .sm-container-item>h1 {
+    font-size: 1.5rem;
+  }
+
+  .sm-container-img img {
+    width: 70vw;
+    height: 12rem;
+    margin-top: 3rem;
+  }
+
+  .sm-container01 {
+    grid-template-columns: 2fr;
+    grid-column-gap: 2em;
+    padding: 2rem;
+  }
+
+  .sm-container-item01>h1 {
+    font-size: 1.5rem;
+  }
+
+  .sm-container-img01 img {
+    width: 70vw;
+    height: 12rem;
+  }
+
+  .sm-container02 {
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    padding: 2rem;
+  }
+
+  .sm-container-item02 h1 {
+    font-size: 1.5rem;
+  }
+
+  .container03 {
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    padding: 2rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin-top: -5px;
+  }
+
+  .pricing-section {
+    background: linear-gradient(to right bottom, #10c3ff, #be47b9);
+    height: 100%;
+    padding: 2% 6%;
+  }
+
+  .pricing-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 600px;
+    width: 70%;
+  }
+
+  .testimonials-content {
+    grid-template-columns: 1fr;
+  }
+
+  .left-section p {
+    display: none;
+  }
+
+  footer {
+    padding: 6% 6% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
+
+@media only screen and (max-width: 456px) {
+  .nav-button {
+    display: none;
+  }
 }
