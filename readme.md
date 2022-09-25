@@ -7,7 +7,7 @@
 # Hosting landing page.
  In This Hosting landing page project I used html and css.It help me to learn basics Thank you Ineuron for giving me these projects. 
 ## Netlify
-[](https://hosting-landing-project.netlify.app/)
+[Live](https://hosting-landing-project.netlify.app/)
 
 # Learn from the project.
 * Designing button.
